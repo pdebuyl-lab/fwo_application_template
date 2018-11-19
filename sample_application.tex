@@ -1,0 +1,116 @@
+\documentclass{fwoapplication}
+
+\author{Pierre de Buyl}
+\title{Sample research project}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Indicate the state of the art.}
+
+
+\subsection{Statistical physics}
+
+\begin{equation*}
+S = k_B \log W
+\end{equation*}
+
+\begin{itemize}
+\item Ensemble theory
+\item Ergodicity
+\item Linear response
+\item Brownian motion~\cite{einstein_brownian_1905}.
+\end{itemize}
+
+
+
+\section{Describe the objectives of the research.}
+
+
+
+\section{Describe the methodology of your research.}
+
+
+\section{Work plan}
+
+
+\begin{compactdesc}
+\item[PROJ1] First project.
+\item[PROJ2] Second project.
+\item[PROJ3] Third project. 
+\end{compactdesc}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[y unit title=0.5cm,
+    y unit chart=0.5cm,
+    x unit=2.3cm,
+    title/.append style={shape=rectangle, fill=black!10},
+    title height=1,
+    bar label font=\small,
+    bar inline label node/.style={font=\footnotesize},
+    bar/.append style={fill=black!10},
+    bar height=.75,
+    group top shift=.6,
+    group height=.2,
+    group peaks height=.2
+    ]{1}{6}
+	\gantttitle{Project (years)}{6} \\
+	\gantttitlelist{1,...,3}{2} \\
+
+        \ganttgroup[group label node/.append style={align=left}]{Part 1 \hspace{1em}}{1}{4}
+        \ganttnewline\ganttnewline
+        \ganttbar[name=proj1-a]{proj 1 a}{1}{1}
+        \ganttbar[name=proj1-b, inline]{proj 1 b}{1}{1}
+        \ganttnewline
+	\ganttbar[name=proj2-a]{proj 2}{2}{2}
+	\ganttbar[name=proj2-b,inline]{proj 2 b}{2}{2}
+	\ganttbar[name=proj2-c,inline]{proj 2 c}{3}{4}
+
+        \ganttnewline
+        \ganttnewline[thick,black]
+        \ganttgroup[group label node/.append style={align=left}]{Part 2}{2}{2}
+        \ganttgroup{}{4}{6}
+        \ganttnewline\ganttnewline
+        \ganttbar[name=proj3-a]{proj 3 a}{2}{2}
+        \ganttbar[name=proj-3-b,inline]{proj 3 b}{2}{2}
+        \ganttnewline
+        \ganttbar[name=proj-4-a]{proj 4 a}{4}{4}
+        \ganttbar[name=proj-4-b,inline]{proj 4 b}{4}{4}
+        \ganttbar[name=proj-4-c,inline]{proj 4 c}{5}{5}
+        \ganttbar[name=proj-4-d,inline]{proj 4 d}{6}{6}
+        \ganttnewline
+        \ganttnewline[thick,black]
+        \ganttgroup[group label node/.append style={align=left}]{Part 3}{2}{6}
+        \ganttnewline\ganttnewline
+        \ganttbar[name=proj-5-a]{proj 5 a}{2}{3}
+        \ganttbar[name=proj-5-b,inline]{proj 5 b}{2}{3}
+        \ganttnewline
+        \ganttbar[name=proj-5-c]{proj 5 c}{4}{6}
+        \ganttbar[inline]{proj 5 d}{4}{6}
+        \ganttnewline
+\end{ganttchart}
+\caption{Provisional schedule of the project}
+\label{fig:gantt}
+\end{figure}
+
+\section{Bibliography}
+
+\begin{multicols}{2}
+\bibliographystyle{unsrtnat-nourl}
+\bibliography{sample_bibliography}
+\end{multicols}
+
+\clearpage
+\section{Indicate below whether you think the results of the proposed research will be
+  suitable to be communicated to a non-expert audience and how you would undertake such
+  communication.}
+
+
+\section{Full bibliographic details of your five main publications}
+
+
+
+\end{document}
